@@ -1,0 +1,17 @@
+.g-default-header {
+  margin-top: 15px;
+  
+  .nav {
+    &bar-brand {
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    &-item.nav-link {
+      margin-left: 15px;
+      color: black;
+      font-family: 'Rubik';
+    }
+  }
+
+}

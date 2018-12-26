@@ -1,0 +1,218 @@
+.home {
+  .section-intro {
+    .custom-container {
+      position: relative;
+      padding: 130px 15px;
+    }
+
+    h1 {
+      font-family: 'Rubik';
+    }
+
+    img {
+      position: absolute;
+      right: 100px;
+      width: 260px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .section-portfolio {
+    .custom-container {
+      display: flex;
+      align-items: center;
+      min-height: calc(80vh - 10vh);
+    }
+
+    .base-slider {
+      position: relative;
+      height: 500px;
+      width: 890px;
+      margin-left: auto;
+      border: 1px solid #e2e2e2;
+
+      &__wrapper {
+        height: 100%;
+      }
+
+      &__item {
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .sub-slider {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      left: -220px;
+      top: 110px;
+      padding: 20px;
+      background-color: #e5c55e;
+
+      &__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px solid $dirt;
+      }
+
+      &__item {
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Rubik';
+        font-weight: 700;
+
+        p {
+          margin-bottom: 0;
+          font-weight: 700;
+        }
+
+        span {
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .section-about {
+    margin: 10px 0;
+    margin-bottom: 85px;
+    h3 {
+      color: $shadegray;
+      font-size: 25px;
+    }
+
+    p {
+      font-family: 'Rubik';
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .section-skills {
+    margin: 10px 0;
+    margin-bottom: 85px;
+
+    h3 {
+      margin-bottom: 22px;
+      color: $shadegray;
+      font-size: 25px;
+    }
+
+    .progress {
+      height: 5px;
+      margin-bottom: 20px;
+
+      &-bar {
+        height: 5px;
+        background-color: #333;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &.html-skill .progress-bar {
+        @include animate-progress('html-bar', 60%);
+        animation: html-bar 0.8s ease-in;
+        width: 60%;
+      }
+
+      &.scss-skill .progress-bar {
+        @include animate-progress('scss-bar', 50%);
+        animation: scss-bar 0.8s ease-in;
+        width: 50%;
+      }
+
+      &.js-skill .progress-bar {
+        @include animate-progress('js-bar', 32%);
+        animation: js-bar 0.8s ease-in;
+        width: 32%;
+      }
+
+      &.psd-skill .progress-bar {
+        @include animate-progress('psd-bar', 60%);
+        animation: psd-bar 0.8s ease-in;
+        width: 60%;
+      }
+
+      &.wordpress-skill .progress-bar {
+        @include animate-progress('wordpress-bar', 50%);
+        animation: wordpress-bar 0.8s ease-in;
+        width: 50%;
+      }
+
+      &.jekyll-skill .progress-bar {
+        @include animate-progress('jekyll-bar', 48%);
+        animation: jekyll-bar 0.8s ease-in;
+        width: 48%;
+      } 
+
+      &.gulp-skill .progress-bar {
+        @include animate-progress('gulp-bar', 40%);
+        animation: gulp-bar 0.8s ease-in;
+        width: 40%;
+      }
+    }
+  }
+
+  .section-services {
+    .custom-container {
+      padding: 15px 25px;
+      h3 {
+        margin-bottom: 22px;
+        position: relative;
+        left: -14px;
+        color: $shadegray;
+        font-size: 25px;
+      }
+    }
+
+    .services {
+      padding: 30px 10px;
+      margin-bottom: 35px;
+      height: 200px;
+      box-shadow: 0px 2px 4px #e2e2e2;
+      border-radius: 4px;
+      
+
+      &.service-jekyll {
+        background-color: $darkgray;
+        color: white;
+      }
+
+      &.service-wordpress {
+        background-color: $wordpress;
+        color: white;
+      }
+
+      &.service-psd-html {
+        background-color: $pstml;
+        color: white;
+      }
+
+      &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 150px;
+        }
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto Condensed';
+
+        p {
+          margin-bottom: 0;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

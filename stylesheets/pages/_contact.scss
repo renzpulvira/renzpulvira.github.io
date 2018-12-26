@@ -1,0 +1,30 @@
+.contact {
+  .custom-container {
+    min-height: calc(100vh - 20vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-contact-content {
+      width: 800px;
+    }
+
+    .section-contact-me {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: -30px;
+    }
+
+    .section-gmail, .section-github {
+      .col-12 {
+        padding: 0px 15px 65px;
+        border-top: 1px solid #e2e2e2;
+
+        h3 {
+          padding-top: 25px
+        }
+      }
+    }
+  }
+}
