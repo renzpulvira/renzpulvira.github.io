@@ -1,0 +1,164 @@
+.home {
+  margin-top: 50px;
+  font-family: 'Hiragino', Fallback, sans-serif;
+
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+    &-heading {
+      font-size: 24px;
+      color: #222222;
+      flex: 0 100%;
+      text-align: center;
+    }
+
+    &-sub-heading {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    &-para {
+      margin-top: 0;
+      color: #484848;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .is-inverse {
+      color: white;
+    }
+  }
+
+  .developer {
+    &-image {
+      flex: 0 30%;
+
+      img {
+        width: 100%;
+        max-width: 270px;
+      }
+    }
+
+    &-info {
+      flex: 0 66%;
+    }
+  }
+
+  .using-phone {
+
+    &-image {
+      flex: 0 30%;
+      order: 2;
+      img {
+        width: 100%;
+        max-width: 270px;
+      }
+    }
+
+    &-info {
+      flex: 0 66%;
+    }
+  }
+
+  .black-bg {
+    background: #222222;
+
+    &-wrapper {
+      padding: 30px 15px 50px;
+
+      .container {
+        padding: 0 15px;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        flex: 0 100%;
+        text-align: center;
+        color: white;
+      }
+
+      p {
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+
+  .hud {
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 370px;
+    }
+
+    h3, p {
+      text-align: center;
+    } 
+
+    p {
+      margin-top: 10px;
+      color: #585858;
+    }
+  }
+
+  .virtual-headset {
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    &__item {
+      flex: 0 33.33%;
+
+      img {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      p {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .typical-work {
+    height: 500px;
+    margin-bottom: 0;
+    background-image: url($images-url + 'typical_work.png');
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      display: block;
+
+      &-sub-heading {
+        margin-top: 10px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .black-bg-wrapper {
+      padding: 15px; 
+    }
+
+    .typical-work {
+      height: 300px;
+    }
+  }
+}
