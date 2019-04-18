@@ -402,5 +402,7 @@ template {
         max-width: 100%; }
     .home .black-bg-wrapper {
       padding: 15px; }
+    .home .virtual-headset__item {
+      margin-bottom: 25px; }
     .home .typical-work {
       height: 300px; } }
