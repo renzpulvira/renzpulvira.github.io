@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Index</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -15,28 +16,86 @@
     <div class="header-container">
       <a class="header-logo" href="#">Renz Pulvira</a>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="scroll" href="#skills">Skills</a></li>
+        <li><a class="scroll" href="#projects">Projects</a></li>
+        <li><a class="scroll" href="#about">About me</a></li>
       </ul>
     </div>
   </header>
   <main class="home">
     <section class="section01">
-      <div class="custom-container">
-        <img src="assets/avatar.png" alt="">
-        <div class="descrip">
-          <h1>Hello,<br>
-            I'm <span>Renz Pulvira.</span> <br>
-            A <span>Front-end Web developer.</span>
-          </h1>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
+      <img src="assets/avatar.png" alt="">
+      <div class="descrip">
+        <h1>Hello, I'm a <br>Front-end <br>Web developer.
+        </h1>
+        <ul>
+          <li><a href="https://github.com/renzpulvira"><i data-feather="github"></i></a></li>
+          <li><a href="#"><i data-feather="linkedin"></i></a></li>
+          <li><a href="#"><i data-feather="mail"></i></a></li>
+        </ul>
       </div>
+    </section>
+    <section class="section02" id="skills">
+      <h2 class="section-header">Skills</h2>
+      <ul>
+        <li><i class="devicon-html5-plain colored"></i></li>
+        <li><i class="devicon-css3-plain colored"></i></li>
+        <li><i class="devicon-javascript-plain colored"></i></li>
+        <li><i class="devicon-wordpress-plain colored"></i></li>
+        <li><i class="devicon-photoshop-plain colored"></i></li>
+        <li><i class="devicon-github-plain colored"></i></li>
+        <li><i class="devicon-gulp-plain colored"></i></li>
+        <li><i class="devicon-sass-original colored"></i></li>
+      </ul>
+    </section>
+    <section class="section03" id="projects">
+      <h3 class="section-header">Projects</h3>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Simple React Todo list
+              <i class="devicon-github-plain colored"></i>
+            </h3>
+            <p>Todo list made with reactjs.</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Renz Pulvira Portfolio
+              <i class="devicon-github-plain colored"></i>
+            </h3>
+            <p>Personal Website made with HTML/CSS.</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Project Ready Boilerplate
+              <i class="devicon-github-plain colored"></i>
+            </h3>
+            <p>A Semi 7-1 architecture template for your web project made with gulp.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="section04" id="about">
+      <h3 class="section-header">About me</h3>
+      <p class="quick-info">I'm Renz Pulvira a Front-end developer, and a linux enthusiast since 2017. I'm currently working my way to become as a Freelancer. I have also worked with my past company <a href="https://fullstackhq.com/">FullstackHQ.</a> 
+
+      I created this website to showcase my portfolio and hopefully share some knowledge through my never-ending learning.
+      </p>
+      <span class="tldr">TLDR; Developer since 2017, Linux enthusiast.</span>
+      <h3>Currently Using</h3>
+      <ul>
+        <li><span>Computer:</span> i5 first gen, 8gb ram PC</li>
+        <li><span>OS:</span> Windows 10</li>
+        <li><span>Editor:</span> Visual Studio Code</li>
+        <li><span>Code Syntax Theme:</span> Monokai</li>
+        <li><span>Task list:</span> Dynalist</li>
+      </ul>
     </section>
   </main>
   <footer></footer>
+  <script src="https://unpkg.com/feather-icons"></script>
   <script src="dist/jquery.js"></script>
   <script src="dist/script.js"></script>
 </body>

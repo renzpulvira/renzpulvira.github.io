@@ -28,4 +28,28 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: 320px){
+    .header-container {
+      max-width: unset;
+      width: 100%;
+      padding: 15px 0 0;
+
+      .header-logo {
+        padding-left: 15px; 
+      }
+
+      ul {
+        padding-right: 15px;
+        li {
+          padding: 0;
+          padding-right: 15px;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
 }

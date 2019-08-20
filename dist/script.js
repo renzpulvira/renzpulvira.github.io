@@ -24,9 +24,14 @@ function smooth_scroll() {
       }
     });
   });
+}
+
+function featherIcons() {
+  feather.replace();
 } // Run functions on load
 
 
 $(function () {
-  scroll();
+  smooth_scroll();
+  featherIcons();
 });
