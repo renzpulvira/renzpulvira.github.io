@@ -1,0 +1,28 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,td,th,p,ul,li,dt,dd {
+	font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&display=swap');
+$fonts: 'Open Sans', 'Roboto', sans-serif;
+body {
+    font-family: $fonts;
+}

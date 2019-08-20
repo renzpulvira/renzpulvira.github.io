@@ -1,0 +1,18 @@
+.home {
+  .section01 {
+    .custom-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 219px;
+        align-self: center;
+      }
+    }
+  }
+}
