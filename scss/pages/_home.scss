@@ -199,9 +199,11 @@
 
     .section01 {
       flex-wrap: wrap;
+      margin: 50px auto 50px;
 
       .section-inner {
         text-align: center;
+        flex-wrap: wrap;
       }
 
       img {

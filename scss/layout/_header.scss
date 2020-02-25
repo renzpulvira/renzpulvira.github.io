@@ -13,7 +13,6 @@ header {
       font-weight: 800;
     }
 
-
     ul {
       padding: 0;
       margin: 0;
@@ -29,18 +28,23 @@ header {
     }
   }
 
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 320px) {
     .header-container {
       max-width: unset;
       width: 100%;
       padding: 15px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px;
+      box-sizing: border-box;
 
       .header-logo {
-        padding-left: 15px; 
+        margin-bottom: 10px;
+        flex: 0 100%;
       }
 
       ul {
-        padding-right: 15px;
+        flex: 0 100%;
         li {
           padding: 0;
           padding-right: 15px;
